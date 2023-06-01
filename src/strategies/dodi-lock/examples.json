@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Example query",
+    "strategy": {
+      "name": "dodi-lock",
+      "params": {
+        "decimals": 18,
+        "votingPowerContractAddress": "0xFc4Abf8e2c5C2Ec4A300143DE0dfC2466b296d0b",
+        "subgraphEndpoint": "https://api.thegraph.com/subgraphs/name/doubledice-com/doubledice-dodi-token-lock"
+      }
+    },
+    "network": "137",
+    "addresses": [
+      "0x34E442C5d41F283A7522701f5b473C5370557871",
+      "0x6Be4107EAA3B66E54eB014089D1a3CFBE3725C5e",
+      "0x1420d88a9ad62362B2b392d8f750a8958D97eeda",
+      "0x0C3270D5989b801D685b15164b8CA77220648d9e",
+      "0xF51c207A1A3a2d589A9830326DcABd7833ccd2B9",
+      "0xDC8f3430e118a08bc3E945710BF372abbB3eed0d",
+      "0x4811c2E09a49b35438381637C07f302bd8c7eA46"
+    ],
+    "snapshot": 43364017
+  }
+]

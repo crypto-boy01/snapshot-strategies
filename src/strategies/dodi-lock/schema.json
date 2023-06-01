@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/Strategy",
+  "definitions": {
+    "Strategy": {
+      "title": "Strategy",
+      "type": "object",
+      "properties": {
+        "decimals": {
+          "type": "number",
+          "title": "Decimals",
+          "examples": ["e.g. 18"]
+        },
+        "subgraphEndpoint": {
+          "type": "string",
+          "title": "Subgraph Endpoint",
+          "examples": ["e.g. https://api.thegraph.com/subgraphs/name/doubledice-com/doubledice-dodi-token-lock"]
+        },
+        "votingPowerContractAddress": {
+          "type": "string",
+          "title": "Contract address",
+          "examples": ["e.g. 0xFc4Abf8e2c5C2Ec4A300143DE0dfC2466b296d0b"],
+          "pattern": "^0x[a-fA-F0-9]{40}$",
+          "minLength": 42,
+          "maxLength": 42
+        }
+      },
+      "required": ["decimals", "subgraphEndpoint", "votingPowerContractAddress"],
+      "additionalProperties": false
+    }
+  }
+}
